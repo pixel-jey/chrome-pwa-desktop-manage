@@ -1,0 +1,4 @@
+.flatpak-builder/
+build/
+repo/
+PWA_Desktop_Manage_v1.flatpak

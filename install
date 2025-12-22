@@ -10,6 +10,7 @@ flatpak-builder --force-clean --disable-rofiles-fuse --repo=repo build-dir com.g
 
 flatpak install --user PWA_Desktop_Manage_v1.flatpak
 
+sudo cp com.github.chrome.PWADesktopManage.desktop /usr/share/applications/
+
 find . -name 'com.github.chrome.PWADesktopManage.desktop' -delete
 
-cp com.github.chrome.PWADesktopManage.desktop ~/.local/share/applications/

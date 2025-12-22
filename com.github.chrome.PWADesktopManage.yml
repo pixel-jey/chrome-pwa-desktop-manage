@@ -32,9 +32,8 @@ modules:
       - chmod +x "${FLATPAK_DEST}/bin/start_app.sh"
       - chmod +x "${FLATPAK_DEST}/pwa"
 
-      # 5. 安装图标和桌面文件
+      # 5. 安装图标
       - install -Dm644 com.github.chrome.PWADesktopManage.png "${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/com.github.chrome.PWADesktopManage.png"
-      - install -Dm644 com.github.chrome.PWADesktopManage.desktop "${FLATPAK_DEST}/share/applications/com.github.chrome.PWADesktopManage.desktop"
 
     sources:
       - type: dir
