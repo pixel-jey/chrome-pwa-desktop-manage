@@ -14,3 +14,4 @@ sudo cp com.github.chrome.PWADesktopManage.desktop /usr/share/applications/
 
 find . -name 'com.github.chrome.PWADesktopManage.desktop' -delete
 
+chmod a+x ~/.var/app/com.github.chrome.PWADesktopManage/data/chrome_pwa_desktop_manage/flet/app/pwa
