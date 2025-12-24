@@ -9,6 +9,8 @@ finish-args:
   - --socket=x11
   - --socket=wayland
   - --device=dri
+  - --allow=devel # 关键：允许执行动态生成的代码
+  - --talk-name=org.freedesktop.Flatpak  # 允许调用宿主机命令
   - --share=ipc
   - --share=network
   - --filesystem=home # 必须有 home 权限才能读写快捷方式目录
