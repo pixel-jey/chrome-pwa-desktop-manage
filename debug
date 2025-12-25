@@ -7,6 +7,7 @@ flatpak build-bundle repo PWA_Desktop_Manage_v1.flatpak com.github.chrome.PWADes
 
 flatpak-builder --user --install --force-clean --disable-rofiles-fuse build-dir com.github.chrome.PWADesktopManage.yml
 
+appstream-util validate --nonet com.github.chrome.PWADesktopManage.metainfo.xml
 
 flatpak-builder --force-clean --disable-rofiles-fuse --repo=repo build-dir com.github.chrome.PWADesktopManage.yml
 

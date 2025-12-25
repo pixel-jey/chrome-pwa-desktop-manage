@@ -1,41 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>com.github.chrome.PWADesktopManage</id>
+
+  <!-- AppStream 元数据许可证（强制） -->
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>MIT</project_license>
-  <name>PWADesktopManage</name>
-  <summary>PWA Desktop Manager</summary>
-  
+
+  <name>Chrome PWA Desktop Manager</name>
+  <summary>Manage Chrome PWA desktop entries</summary>
+
   <description>
     <p>
-      PWADesktopManage is a tool to help you manage Progressive Web Apps (PWAs)
-      directly from your desktop.
+      Chrome PWA Desktop Manager is a graphical tool for managing
+      Chrome-based Progressive Web App desktop entries.
+    </p>
+    <p>
+      It allows users to list, clean, and regenerate PWA desktop files
+      in a simple and efficient way.
     </p>
   </description>
 
-  <launchable type="desktop-id">com.github.chrome.PWADesktopManage.desktop</launchable>
-  
+  <!-- 版本发布信息（至少一个 release 是强制的） -->
   <releases>
-    <release version="1.0.0" date="2025-12-25" />
+    <release version="1.0.0" date="2024-01-01">
+      <description>
+        <p>Initial release.</p>
+      </description>
+    </release>
   </releases>
-  
+
+  <!-- 内容分级（OARS 必需） -->
+  <content_rating type="oars-1.1">
+    <content_attribute id="violence-cartoon">none</content_attribute>
+    <content_attribute id="violence-realistic">none</content_attribute>
+    <content_attribute id="violence-fantasy">none</content_attribute>
+    <content_attribute id="drugs-alcohol">none</content_attribute>
+    <content_attribute id="drugs-narcotics">none</content_attribute>
+    <content_attribute id="drugs-tobacco">none</content_attribute>
+    <content_attribute id="sex-nudity">none</content_attribute>
+    <content_attribute id="sex-themes">none</content_attribute>
+    <content_attribute id="language-profanity">none</content_attribute>
+    <content_attribute id="language-humor">none</content_attribute>
+    <content_attribute id="language-sexual">none</content_attribute>
+    <content_attribute id="money-gambling">none</content_attribute>
+    <content_attribute id="money-purchasing">none</content_attribute>
+  </content_rating>
+
+  <!-- 项目链接 -->
+  <url type="homepage">
+    https://github.com/lixiujunj2ee/chrome-pwa-desktop-manage
+  </url>
+  <url type="bugtracker">
+    https://github.com/lixiujunj2ee/chrome-pwa-desktop-manage/issues
+  </url>
+  <url type="vcs-browser">
+    https://github.com/lixiujunj2ee/chrome-pwa-desktop-manage
+  </url>
+
+  <!-- 截图 -->
   <screenshots>
     <screenshot type="default">
-      <image type="source">github.com</image>
-      <caption>HOME</caption>
+      <image width="1280" height="800">
+        https://raw.githubusercontent.com/lixiujunj2ee/chrome-pwa-desktop-manage/main/images/demo_1.png
+      </image>
     </screenshot>
+
     <screenshot>
-      <image type="source">github.com</image>
-      <caption>PWA List View</caption>
+      <image width="1280" height="800">
+        https://raw.githubusercontent.com/lixiujunj2ee/chrome-pwa-desktop-manage/main/images/demo_2.png
+      </image>
     </screenshot>
+
     <screenshot>
-      <image type="source">github.com</image>
-      <caption>PWA Command</caption>
+      <image width="1280" height="800">
+        https://raw.githubusercontent.com/lixiujunj2ee/chrome-pwa-desktop-manage/main/images/demo_3.png
+      </image>
     </screenshot>
+
     <screenshot>
-      <image type="source">github.com</image>
-      <caption>PWA Set Custom Shortcuts</caption>
+      <image width="1280" height="800">
+        https://raw.githubusercontent.com/lixiujunj2ee/chrome-pwa-desktop-manage/main/images/demo_4.png
+      </image>
     </screenshot>
   </screenshots>
+
+  <launchable type="desktop-id">
+    com.github.chrome.PWADesktopManage.desktop
+  </launchable>
 </component>
 
