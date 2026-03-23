@@ -35,16 +35,14 @@ install -Dm755 pwa "${BIN_PWA}"
 # launcher wrapper
 install -Dm755 /dev/stdin "${BIN_MAIN}" << 'EOF'
 #!/usr/bin/env bash
-export LIBGL_ALWAYS_SOFTWARE=1
-export SDL_VIDEODRIVER=x11
-export GDK_BACKEND=x11
-APP_PATH="/usr/share/chrome-pwa-desktop-manage/main.py"
-exec python3 -u "$APP_PATH" "$@"
+APP_PATH="/usr/share/chrome-pwa-desktop-manage/"
+cd "$APP_PATH"
+exec java -jar PwaManager.jar
 EOF
 
 # ---- app data ----
 install -d "${DATA_DIR}"
-install -m644 main.py "${DATA_DIR}/main.py"
+install -m644 PwaManager.jar "${DATA_DIR}/PwaManager.jar"
 
 # ---- desktop entry ----
 install -Dm644 "${DESKTOP_FILE}" \
