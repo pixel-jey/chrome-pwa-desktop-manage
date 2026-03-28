@@ -6,6 +6,11 @@
   <summary>Manage Chrome Progressive Web Apps desktop shortcuts</summary>
   
   <releases>
+    <release version="2.0.0" date="2026-03-28">
+      <description>
+        <p>Stable release.</p>
+      </description>
+    </release>
     <release version="1.0.1" date="2026-01-03">
       <description>
         <p>Initial release.</p>

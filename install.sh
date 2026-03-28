@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 set -e
 
-export LOGIN_USER="$(getent passwd `who` | head -n 1 | cut -d : -f 1)"
-USER_HOME="/home/${LOGIN_USER}"
-
 APP_NAME="chrome-pwa-desktop-manage"
 DATA_DIR="/usr/share/${APP_NAME}"
 
@@ -44,8 +41,6 @@ install -Dm644 "${DESKTOP_FILE}" \
 # ---- icon ----
 install -Dm644 "icons/${ICON_FILE}" \
   "/usr/share/icons/hicolor/128x128/apps/${ICON_FILE}"
-install -Dm644 "icons/${ICON_FILE}" \
-  "/${USER_HOME}/.local/share/icons/hicolor/128x128/apps/${ICON_FILE}"
 
 # ---- metainfo ----
 install -Dm644 "${META_FILE}" \
@@ -57,7 +52,7 @@ update-desktop-database >/dev/null 2>&1 || true
 gtk-update-icon-cache /usr/share/icons/hicolor >/dev/null 2>&1 || true
 sudo rm -rf /var/cache/appstream/*
 sudo appstreamcli refresh-cache
-pkill software
+sudo pkill software
 sudo dnf clean all
 
 echo "==> Installation complete"
