@@ -5,7 +5,9 @@ use for chrome pwa desktop shortcut and app open it only one window
 chrome rpm stable version -> /opt/google/chrome/google-chrome  if use other version  use ln -s link it
 
 1.ActivateWindowByTitle gnome extends
-2./opt/google/chrome/google-chrome dnf
+
+2./opt/google/chrome/google-chrome dnf install google-chrome-stable
+
 3./usr/java/jdk-17  install jdk 17
 
 gui easy to use!
