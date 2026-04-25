@@ -14,8 +14,9 @@ gui easy to use!
 
 
 
-1.0 version
+
 ## Recommended Installation 
+1.0 version
 
 This project is officially supported via source-based installation.
 
