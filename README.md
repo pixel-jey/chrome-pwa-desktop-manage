@@ -26,6 +26,7 @@ primary supported distribution method.
  
 ## Recommended Installation
 2.0 version
+
 use java write it again and need install jdk 17
 /usr/java/jdk-17
 you can pip remove flet and never use it
@@ -35,6 +36,7 @@ java is very good at the stable version the update the linux high or low version
 
 ## summarize
 1.0 python
+
 2.0 java
 
 
