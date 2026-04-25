@@ -12,6 +12,8 @@ chrome rpm stable version -> /opt/google/chrome/google-chrome  if use other vers
 
 gui easy to use!
 
+
+
 1.0 version
 ## Recommended Installation 
 
