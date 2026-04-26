@@ -11,6 +11,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 rm -f /usr/bin/pwa
+rm -f /usr/bin/pwa-icon
 rm -f /usr/bin/chrome-pwa-desktop-manage
 rm -rf /usr/share/${APP_NAME}
 
