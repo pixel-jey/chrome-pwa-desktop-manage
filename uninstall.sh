@@ -11,15 +11,21 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 rm -f /usr/bin/pwa
+rm -f /usr/bin/pwa-icon
+rm -f /usr/bin/pwa-one
 rm -f /usr/bin/chrome-pwa-desktop-manage
 rm -rf /usr/share/${APP_NAME}
 
 rm -f /usr/share/applications/chrome-pwa-desktop-manage.desktop
 rm -f /usr/share/icons/hicolor/128x128/apps/chrome-pwa-desktop-manage.png
-rm -f /usr/share/metainfo/chrome-pwa-desktop-manage.metainfo.xml
+rm -f /usr/share/metainfo/com.google.chrome-pwa-desktop-manage.metainfo.xml
 
 update-desktop-database >/dev/null 2>&1 || true
 gtk-update-icon-cache /usr/share/icons/hicolor >/dev/null 2>&1 || true
+sudo rm -rf /var/cache/appstream/*
+sudo appstreamcli refresh-cache
+sudo pkill software
+sudo dnf clean all
 
 echo "==> Uninstall complete"
 

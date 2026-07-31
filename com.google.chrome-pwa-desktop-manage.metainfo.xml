@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.github.pixel-jey.chrome-pwa-desktop-manage</id>
+
+  <name>Chrome PWA Desktop Manager</name>
+  <summary>Manage Chrome Progressive Web Apps desktop shortcuts</summary>
+  
+  <releases>
+    <release version="2.0.0" date="2026-03-28">
+      <description>
+        <p>Stable release.</p>
+      </description>
+    </release>
+    <release version="1.0.1" date="2026-01-03">
+      <description>
+        <p>Initial release.</p>
+      </description>
+    </release>
+    <release version="1.0.0" date="2025-12-29">
+      <description>
+        <p>Initial release.</p>
+      </description>
+    </release>
+  </releases>
+
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+
+  <categories>
+    <category>Utility</category>
+    <category>System</category>
+  </categories>
+
+  <launchable type="desktop-id">com.github.pixel-jey.ChromePWADesktopManage.desktop</launchable>
+
+  <icon type="stock">chrome-pwa-desktop-manage</icon>
+
+  <description>
+    <p>
+      A user-friendly tool to manage Chrome PWA desktop shortcuts on Linux.
+      Ensures single instance opening and easy management of installed PWAs.
+    </p>
+  </description>
+
+  <provides>
+    <binary>chrome-pwa-desktop-manage</binary>
+    <binary>pwa</binary>
+  </provides>
+
+  <screenshots>
+    <screenshot type="default">
+      <caption>Application main window managing PWAs List desktop</caption>
+	    <image type="source" width="1280" height="800">https://raw.githubusercontent.com/pixel-jey/chrome-pwa-desktop-manage/main/screenshots/screen1.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Application main window managing PWAs Edit icon</caption>
+      <image type="source" width="1280" height="800">https://raw.githubusercontent.com/pixel-jey/chrome-pwa-desktop-manage/main/screenshots/screen2.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Application main window managing PWAs Use shell pwa</caption>
+      <image type="source" width="1280" height="800">https://raw.githubusercontent.com/pixel-jey/chrome-pwa-desktop-manage/main/screenshots/screen3.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Application main window managing PWAs Set custom shotcuts</caption>
+      <image type="source" width="1280" height="800">https://raw.githubusercontent.com/pixel-jey/chrome-pwa-desktop-manage/main/screenshots/screen4.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Application main window managing PWAs on chrome create apps</caption>
+      <image type="source" width="1280" height="800">https://raw.githubusercontent.com/pixel-jey/chrome-pwa-desktop-manage/main/screenshots/screen5.png</image>
+    </screenshot>
+  </screenshots>
+    
+  <content_rating type="oars-1.1"/>
+  
+  <url type="homepage"> https://github.com/pixel-jey/chrome-pwa-desktop-manage </url>
+  <url type="bugtracker"> https://github.com/pixel-jey/chrome-pwa-desktop-manage/issues </url>
+  <url type="vcs-browser"> https://github.com/pixel-jey/chrome-pwa-desktop-manage </url>
+  
+  <developer id="com.github.pixel-jey">
+    <name>pixel-jey</name>
+  </developer>
+
+  <update_contact>pixeljey.dev@gmail.com</update_contact>
+
+</component>
+

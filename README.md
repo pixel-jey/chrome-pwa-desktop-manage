@@ -4,10 +4,16 @@ use for chrome pwa desktop shortcut and app open it only one window
 
 chrome rpm stable version -> /opt/google/chrome/google-chrome  if use other version  use ln -s link it
 
+1.ActivateWindowByTitle gnome extends
+
+2./opt/google/chrome/google-chrome dnf install google-chrome-stable
+
+3./usr/java/jdk-17  install jdk 17
+
 gui easy to use!
 
-
-## Recommended Installation
+## Recommended Installation 
+1.0 version
 
 This project is officially supported via source-based installation.
 
@@ -17,4 +23,28 @@ integration.
 
 Binary builds are provided only as an optional convenience and are not the
 primary supported distribution method.
+ 
+## Recommended Installation
+2.0 version
 
+use java write it again and need install jdk 17
+/usr/java/jdk-17
+you can pip remove flet and never use it
+
+python flet very bad for update the version and run start slow
+java is very good at the stable version the update the linux high or low version and run very fast and stable
+
+## summarize
+1.0 python
+
+2.0 java
+
+
+---
+
+## ☕ Support
+If this **PWA Manager** helped you streamline your desktop, consider supporting my work!
+
+- **Support Links:** <a href="https://linktr.ee/hightrulys" target="_blank">linktr.ee/hightrulys</a> 🌿✨
+
+> **Tip:** Your tips help me keep these tools open-source and free of bloatware.
