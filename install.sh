@@ -8,8 +8,6 @@ APP_NAME="chrome-pwa-desktop-manage"
 DATA_DIR="/usr/share/${APP_NAME}"
 
 BIN_PWA="/usr/bin/pwa"
-BIN_ICON="/usr/bin/pwa-icon"
-BIN_ONE="/usr/bin/pwa-one"
 BIN_MAIN="/usr/bin/chrome-pwa-desktop-manage"
 
 DESKTOP_FILE="chrome-pwa-desktop-manage.desktop"
@@ -26,8 +24,6 @@ fi
 
 # ---- binaries ----
 install -Dm755 pwa "${BIN_PWA}"
-install -Dm755 pwa-icon "${BIN_ICON}"
-install -Dm755 pwa-one "${BIN_ONE}"
 
 # launcher wrapper
 install -Dm755 /dev/stdin "${BIN_MAIN}" << 'EOF'
