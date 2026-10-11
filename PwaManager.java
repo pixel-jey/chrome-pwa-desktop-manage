@@ -197,7 +197,7 @@ public class PwaManager extends JFrame {
 				byte[] bytes = java.nio.file.Files.readAllBytes(file.toPath());
 				String content = new String(bytes, StandardCharsets.UTF_8);
 
-				java.util.regex.Pattern pattern = java.util.regex.Pattern.compile("Icon=chrome-([a-z]{32})");
+				java.util.regex.Pattern pattern = java.util.regex.Pattern.compile("Icon=.*chrome-([a-z]{32})");
 				java.util.regex.Matcher matcher = pattern.matcher(content);
 				if (matcher.find()) {
 					extractedId = matcher.group(1);
